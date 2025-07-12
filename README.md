@@ -1,0 +1,2 @@
+# Javascript-Practice
+Learning JS
