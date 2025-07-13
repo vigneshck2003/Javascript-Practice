@@ -58,14 +58,22 @@ Types of loops
 // console.log("Factorial of ", userInputNum, " is: ", fact);
 
 // Question 7: Reverse a number
-let reverseNum = 0
-let nInput = prompt("Enter a number: ");
-console.log(typeof nInput)
-while(nInput != 0){
+// let reverseNum = 0
+// let nInput = prompt("Enter a number: ");
+// console.log(nInput)
+// while(nInput != 0){
 
-        reverseNum = reverseNum * 10 + (nInput % 10);
-        nInput = Math.floor(nInput / 10);
+//         reverseNum = reverseNum * 10 + (nInput % 10);
+//         nInput = Math.floor(nInput / 10);
     
+// }
+// console.log(reverseNum);
+
+// Question 8: Count number of digits
+let num = prompt('Enter a number: ');
+let count = 0;
+while(num != 0){
+    num = Math.floor(num / 10);
+    count++;
 }
-console.log(reverseNum);
-console.log(typeof reverseNum);
+console.log("Count: ", count)
