@@ -50,10 +50,22 @@ Types of loops
 // }
 
 // Question 6: Factorial of a number
-let fact = 1
-let userInputNum = prompt("Enter a number: ");
-for(let num = 1; num <= userInputNum; num++){
-    fact *= num;
-}
-console.log("Factorial of ", userInputNum, " is: ", fact);
+// let fact = 1
+// let userInputNum = prompt("Enter a number: ");
+// for(let num = 1; num <= userInputNum; num++){
+//     fact *= num;
+// }
+// console.log("Factorial of ", userInputNum, " is: ", fact);
 
+// Question 7: Reverse a number
+let reverseNum = 0
+let nInput = prompt("Enter a number: ");
+console.log(typeof nInput)
+while(nInput != 0){
+
+        reverseNum = reverseNum * 10 + (nInput % 10);
+        nInput = Math.floor(nInput / 10);
+    
+}
+console.log(reverseNum);
+console.log(typeof reverseNum);
